@@ -1,0 +1,8 @@
+<div class="spa-menu-area"
+    ng-class="{'spa-menu-area-vertical':vm.isVertical,
+                'spa-menu-area-horizontal':!vm.isVertical}">
+    <ul class="spa-menu" ng-transclude></ul>
+    <a class="btn spa-menu-layout-button" ng-click="vm.toggleMenuOrientation()">
+        <i class="glyphicon glyphicon-chevron-up"></i>
+    </a>
+</div>

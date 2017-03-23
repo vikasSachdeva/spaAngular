@@ -1,0 +1,24 @@
+<div class="spa-title-bar row">
+    <div class="spa-logo col-sm-6">
+        <img ng-src={{iconFile}} alt="angular image" class="spa-icon">
+        <div class="spa-title-area">
+            <p class="spa-logo-title">{{title}}</p>
+            <p class="spa-logo-subtitle">{{subtitle}}</p>
+        </div>
+    
+        <div ng-if="vm.isMenuButtonVisible" class="spa-collapsed-menu pull-right"  ng-click="vm.menuButtonClicked()">
+            <button type="button"  class="btn spa-nav-button">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+        </div>   
+    </div>
+        
+    <div class="spa-right-side-controls col-sm-6">
+        <div>
+            <button class="btn btn-primary">Button 1</button>
+            <button class="btn btn-success">Button 2</button>
+            <button class="btn btn-warning">Button 3</button>
+        </div>    
+    </div>
+</div>
+<div ng-transclude></div>

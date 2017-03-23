@@ -1,0 +1,12 @@
+<li class="spa-menu-item" ng-class="{'spa-item-horizontal':!isVertical()}" ng-click="clicked()">
+    <div class="spa-noselect">
+        <i class="glyphicon {{icon}} spa-menu-icon"></i>
+        {{label}}
+        <i class="spa-menu-group-indicator" 
+        ng-class="{'glyphicon glyphicon-chevron-left':!isOpen,
+                 'glyphicon glyphicon-chevron-down': isOpen}"></i>
+    </div>  
+</li>
+<div class="group-items-indentation" ng-class="{'spa-popup-menu':!isVertical()}" ng-show="isOpen">
+    <ul ng-transclude></ul>
+</div>

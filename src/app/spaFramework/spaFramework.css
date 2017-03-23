@@ -1,0 +1,79 @@
+.spa-title-bar {
+    background-color: white;
+    padding: 0 20px;
+    border-bottom: 2px solid black;
+    /*text-align: center*/
+}
+
+.spa-title-area {
+    display: inline-block;
+    text-align: center;
+}
+
+.spa-icon { 
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    border: 1px solid #999;
+}
+
+.spa-logo-title {
+    color: #111;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.spa-logo-subtitle {
+    margin-top: -13px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 460px) {
+    .spa-icon {
+        display: none;
+    }
+    
+    .spa-logo-title {
+        font-size: 18px;
+    }
+}
+
+.spa-right-side-controls {
+    line-height: 70px;
+    text-align: center;
+}
+
+.spa-right-side-controls > div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .spa-right-side-controls > div{
+        text-align: right;
+    }
+
+    .spa-title-area{
+        text-align: left;
+    }    
+    
+    .spa-title-bar {
+        text-align: left
+    }
+}
+
+.spa-collapsed-menu {
+    display: inline-block;
+    height: 100%
+}
+
+.spa-nav-button {
+    height: 40px;
+    width: 60px;
+    margin-top: 16px;
+    border: 1px solid #888;
+    padding: 0;
+    font-size: 26px;
+    color: #777;
+}

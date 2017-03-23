@@ -1,0 +1,9 @@
+<li class="spa-menu-item" ng-class="{'spa-item-horizontal':!isVerticals()}">
+    <div class="spa-noselect">
+        <i class="glyphicon {{icon}} spa-menu-icon"></i>
+        {{label}}
+    </div>  
+    <i ng-if="isActive()" class="glyphicon glyphicon-triangle-left spa-menu-item-active"></i>
+</li>
+
+<!--{{vm.activeElement}}-->
